@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="10dp">
+
+    <EditText
+        android:id="@+id/editMatkul"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Mata Kuliah"
+        android:ems="10"/>
+
+
+    <EditText
+        android:id="@+id/editDosen"
+        android:layout_below="@+id/editMatkul"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18dp"
+        android:hint="Dosen"
+        android:ems="10"/>
+
+    <Spinner
+        android:id="@+id/editHari"
+        android:layout_below="@+id/editDosen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="18dp"
+        android:autofillHints="hari"
+        android:background="@android:drawable/btn_dropdown"
+        android:spinnerMode="dropdown"/>
+
+    <EditText
+        android:id="@+id/editJam"
+        android:layout_below="@+id/editMatkul"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="time"
+        android:layout_marginTop="18dp"
+        android:hint="Jam"
+        android:ems="10"/>
+
+    <EditText
+        android:id="@+id/editRuangan"
+        android:layout_below="@+id/editJam"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18dp"
+        android:hint="Ruangan"
+        android:ems="10"/>
+
+    <Button
+        android:id="@+id/editBtnMatkul"
+        android:layout_below="@id/tahun"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:minWidth="160dp"
+        android:text="Update"
+        style="@style/Base.Widget.AppCompat.Button.Colored"/>
+
+
+
+</LinearLayout>

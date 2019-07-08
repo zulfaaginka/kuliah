@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MatkulList">
+
+    <ListView
+        android:id="@+id/ListMatkul"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+    </ListView>
+
+    <Button
+        android:id="@+id/addMatkul"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_gravity="center_horizontal|bottom"
+        android:layout_centerHorizontal="true"
+        android:minWidth="160dp"
+        style="@style/Base.Widget.AppCompat.Button.Colored"
+        android:fitsSystemWindows="true"
+        android:layout_weight="0"
+        android:text="Add Mata Kuliah" />
+
+</LinearLayout>
